@@ -72,6 +72,7 @@ const testLinks = async () => {
         await setCounter(page, "minus");
         await page.$eval('button[class="button-1 add-to-cart-button"]', form => form.click());
         await page.$eval('div[class="articleNum"]', form => form.click());
+        console.log("Test passed");
     } catch (err) {
         console.error(err);
     }
